@@ -1,0 +1,6 @@
+**/**/node_modules
+**/**/dist
+/package/storybook/**/storybook-static
+
+package-lock.json
+yarn.lock
