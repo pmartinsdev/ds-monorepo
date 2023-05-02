@@ -1,19 +1,16 @@
-import { StoryObj, Meta, moduleMetadata } from "@storybook/angular"
-import { ButtonModule, ButtonComponent } from "@monorepo/angular"
+import { StoryObj, Meta } from "@storybook/angular"
+import { ButtonComponent } from "@monorepo/angular"
+
+import { resolveResourcesDecorator } from "../.storybook/resolve-resources.decorator"
 
 export default {
   title: "Form/Button",
   component: ButtonComponent,
-  decorators: [
-    moduleMetadata({
-      imports: [ButtonModule]
-    })
-  ],
+  decorators: [resolveResourcesDecorator]
 } as Meta<ButtonComponent>
 
 export const Default: StoryObj<ButtonComponent> = {
   args: {
     label: 'Button',
-
   }
-}
+} 

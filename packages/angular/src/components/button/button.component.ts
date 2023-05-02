@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core"
+import { Component, Input } from "@angular/core"
 
 @Component({
   selector: "bpds-button",
@@ -8,13 +8,5 @@ import { Component, Input, Output, EventEmitter } from "@angular/core"
 export class ButtonComponent {
   @Input()
   label: string
-
-  @Output()
-  onClick = new EventEmitter()
-
-  handleClick() {
-    this.onClick.emit()
-  }
 }
 
-export default ButtonComponent

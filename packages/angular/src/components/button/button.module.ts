@@ -4,6 +4,4 @@ import { ButtonComponent } from "./button.component";
 @NgModule({
   declarations: [ButtonComponent]
 })
-export class ButtonModule {
-
-}
+export class ButtonModule { } 
